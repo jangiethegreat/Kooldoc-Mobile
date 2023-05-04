@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Cleaning.bookCleaning"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"
+        android:layout_marginBottom="@dimen/_400sdp"
+        android:background="#1B98DD">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_backwhite"
+            android:layout_marginTop="@dimen/_30sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cleaning Condition"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/montmedium"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:textSize="@dimen/_12ssp"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aircon\nMaintainance"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserratbold"
+            android:textSize="@dimen/_32ssp"
+            android:layout_marginTop="@dimen/_100sdp"
+            android:layout_marginLeft="20dp"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_220sdp"
+            android:background="@drawable/border_lightdark2"
+            android:padding="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/txt_serviceType"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:paddingTop="@dimen/_9sdp"
+                android:textSize="@dimen/_17ssp"
+                android:text="Maintenance Condition"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserratbold"
+
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:paddingLeft="@dimen/_5sdp"
+                />
+
+
+            <TextView
+                android:id="@+id/question_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Is it Cooling in normal Condition?"
+                android:layout_below="@id/txt_serviceType"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montmedium"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:textSize="@dimen/_12ssp"
+                android:layout_marginTop="@dimen/_20sdp"/>
+
+            <Spinner
+                android:id="@+id/spinner_one"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:paddingRight="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_20sdp"
+                android:textSize="@dimen/_20sdp"
+                android:fontFamily="@font/montserrat"
+                android:layout_below="@+id/question_one"
+                android:background="@drawable/rounded_corner_lightblue"/>
+
+
+
+            <TextView
+                android:id="@+id/question_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Is there any mechanical noise during \nusage of Aircon?"
+                android:layout_below="@id/spinner_one"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montmedium"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:textSize="@dimen/_12ssp"
+                android:layout_marginTop="@dimen/_10sdp"/>
+            <Spinner
+                android:id="@+id/spinner_two"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:paddingRight="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_20sdp"
+                android:textSize="@dimen/_20sdp"
+                android:fontFamily="@font/montserrat"
+                android:layout_below="@+id/question_two"
+                android:background="@drawable/rounded_corner_lightblue"/>
+
+            <TextView
+                android:id="@+id/question_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Is there a electric/power connectivity on \nyour airconditioning unit?"
+                android:layout_below="@id/spinner_two"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montmedium"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:textSize="@dimen/_12ssp"
+                android:layout_marginTop="@dimen/_10sdp"/>
+            <Spinner
+                android:id="@+id/spinner_three"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:paddingRight="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_20sdp"
+                android:textSize="@dimen/_20sdp"
+                android:fontFamily="@font/montserrat"
+                android:layout_below="@+id/question_three"
+                android:background="@drawable/rounded_corner_lightblue"/>
+
+            <Button
+                android:id="@+id/btnProceed"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:textColor="@color/white"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:background="@drawable/rounded_corner_black"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_below="@id/spinner_three"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:elevation="@dimen/_10sdp"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

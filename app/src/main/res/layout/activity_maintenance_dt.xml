@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Cleaning.CleaningDT"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="400dp"
+        android:background="#0077b6"
+        >
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_backwhite"
+            android:layout_marginTop="@dimen/_20sdp"
+
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aircon \nMaintenance"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserratbold"
+            android:textSize="@dimen/_27sdp"
+            android:layout_marginTop="@dimen/_100sdp"
+            android:layout_marginLeft="@dimen/_20sdp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_400sdp"
+            android:layout_marginTop="@dimen/_200sdp"
+            android:background="@drawable/border_lightdark2"
+            android:padding="@dimen/_15sdp">
+
+            <EditText
+                android:id="@+id/edt_addNumberUnit"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:fontFamily="@font/montregular"
+                android:inputType="number"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:hint="Number of Unit"
+                android:paddingLeft="@dimen/_20sdp"
+                android:background="@drawable/rounded_corner_lightblue"/>
+
+
+
+
+            <Button
+                android:id="@+id/btn_checkPrice"
+                android:layout_width="@dimen/_160sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:fontFamily="@font/montmedium"
+                android:textColor="@color/white"
+                android:text="Check service Price"
+                android:background="@drawable/rounded_corner_black"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_below="@id/edt_addNumberUnit"/>
+
+            <TextView
+                android:id="@+id/txt_viewPricing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View Pricing"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/kdcolor"
+                android:layout_marginTop="@dimen/_35sdp"
+                android:layout_marginLeft="@dimen/_200sdp"
+                android:fontFamily="@font/montserrat"
+                android:layout_below="@id/edt_addNumberUnit"
+                />
+
+            <TextView
+                android:id="@+id/text_Price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1275"
+                android:textSize="@dimen/_18sdp"
+                android:textColor="@color/kdcolor"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_220sdp"
+                android:fontFamily="@font/montserrat"
+                android:layout_below="@id/btn_checkPrice"
+                />
+
+
+            <TextView
+                android:id="@+id/price_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price of the Service: PHP"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:fontFamily="@font/montserrat"
+                android:layout_below="@id/btn_checkPrice"
+                />
+            <TextView
+                android:id="@+id/payment_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Payment Method: "
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:textSize="@dimen/_14ssp"
+                android:fontFamily="@font/montserratbold"
+                android:layout_below="@id/price_head"/>
+
+
+
+            <Button
+                android:id="@+id/btnGcash"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:text="G-cash"
+                android:textColor="@color/white"
+                android:fontFamily="@font/montmedium"
+                android:background="@drawable/rounded_corner_black"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_below="@id/payment_head"/>
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/montmedium"
+                android:textSize="@dimen/_10ssp"
+                android:text="Cash on Service"
+                android:background="@drawable/rounded_corner_black"
+                android:layout_marginLeft="@dimen/_150sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_below="@id/payment_head"/>
+
+
+
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:elevation="@dimen/_10sdp"
+                android:visibility="gone"/>
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

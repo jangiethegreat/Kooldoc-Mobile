@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Installation.installationSchedule">
+
+    <TextView
+        android:id="@+id/tv_sdt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Date and Time"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:paddingLeft="50dp"
+        android:fontFamily="@font/montserrat"
+        android:paddingTop="20dp"
+        />
+
+
+    <TextView
+        android:id="@+id/selected_date_time_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:layout_alignLeft="@+id/radiogroup"
+        android:layout_marginLeft="190dp"
+        android:layout_below="@+id/tv_sdt"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/calendar_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radiogroup"
+        android:layout_below="@id/selected_date_time_text_view"
+        android:paddingTop="10dp"
+        android:layout_marginLeft="190dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/timeslot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radiogroup"
+        android:layout_below="@id/calendar_text"
+        android:paddingTop="10dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="190dp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/alertMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timeslot"
+        android:layout_alignLeft="@+id/radiogroup"
+        android:paddingTop="10dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="190dp"
+        android:textColor="@color/black"/>
+
+
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/tv_sdt"
+        >
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6:00 A.M. - 9:00 A.M."
+            />
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9:00 A.M. - 12:00 P.M."
+            />
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12:00 P.M. - 3:00 P.M."
+            />
+        <RadioButton
+            android:id="@+id/rb4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3:00 P.M. - 6:00 P.M."
+            />
+
+    </RadioGroup>
+    <CalendarView
+        android:id="@+id/calendar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radiogroup"
+        />
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calendar_view"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="150dp"
+        android:text="Next" />
+</RelativeLayout>

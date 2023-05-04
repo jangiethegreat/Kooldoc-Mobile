@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Cleaning.cleaningReceipt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"
+        android:layout_marginBottom="@dimen/_400sdp"
+        android:background="#0077b6"
+        >
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_backwhite"
+            android:layout_marginTop="@dimen/_30sdp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cleaning Receipt"
+            android:fontFamily="@font/montmedium"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service Information"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserratbold"
+            android:textSize="@dimen/_26ssp"
+            android:layout_marginTop="@dimen/_80sdp"
+            android:layout_centerHorizontal="true"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_140sdp"
+            android:background="@drawable/border_lightdark2"
+            android:padding="@dimen/_15sdp">
+
+            <TextView
+                android:id="@+id/relative_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Transaction History"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserratbold"
+                android:textSize="@dimen/_16ssp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                />
+
+            <TextView
+                android:id="@+id/serv_ID"
+                android:layout_below="@+id/relative_head"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:paddingTop="@dimen/_12sdp"
+                android:paddingLeft="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_width="@dimen/_340sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:text="Aircon Type: "
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/black"
+                android:background="@drawable/rounded_corner_lightblue"
+                android:fontFamily="@font/montmedium"/>
+
+            <TextView
+                android:id="@+id/serv_bookType"
+                android:layout_below="@+id/serv_ID"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_12ssp"
+                android:paddingTop="@dimen/_12sdp"
+                android:paddingLeft="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_width="@dimen/_340sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:text="Aircon Brand: "
+                android:textColor="@color/black"
+                android:background="@drawable/rounded_corner_lightblue"
+                android:fontFamily="@font/montmedium"/>
+
+            <TextView
+                android:id="@+id/serv_serviceType"
+                android:layout_below="@+id/serv_bookType"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingTop="@dimen/_12sdp"
+                android:paddingLeft="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_width="@dimen/_340sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:textSize="@dimen/_12ssp"
+                android:text="Aircon Unit Type: "
+                android:textColor="@color/black"
+                android:background="@drawable/rounded_corner_lightblue"
+                android:fontFamily="@font/montmedium"/>
+
+            <TextView
+                android:id="@+id/serv_acType"
+                android:layout_below="@+id/serv_serviceType"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingTop="@dimen/_12sdp"
+                android:paddingLeft="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_width="@dimen/_340sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:textSize="@dimen/_12ssp"
+                android:text="Aircon Number of Unit:"
+                android:textColor="@color/black"
+                android:background="@drawable/rounded_corner_lightblue"
+                android:fontFamily="@font/montmedium"/>
+
+            <TextView
+                android:id="@+id/serv_acBrand"
+                android:layout_below="@+id/serv_acType"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingTop="@dimen/_12sdp"
+                android:paddingLeft="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_width="@dimen/_340sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:textSize="@dimen/_12ssp"
+                android:text="Service Date:"
+                android:textColor="@color/black"
+                android:background="@drawable/rounded_corner_lightblue"
+                android:fontFamily="@font/montmedium"/>
+
+            <TextView
+                android:id="@+id/serv_unitType"
+                android:layout_below="@+id/serv_acBrand"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingTop="@dimen/_12sdp"
+                android:paddingLeft="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_width="@dimen/_340sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:textSize="@dimen/_12ssp"
+                android:text="Service Time:"
+                android:textColor="@color/black"
+                android:background="@drawable/rounded_corner_lightblue"
+                android:fontFamily="@font/montmedium"/>
+
+            <TextView
+                android:id="@+id/serv_noUnit"
+                android:layout_below="@+id/serv_unitType"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingTop="@dimen/_12sdp"
+                android:paddingLeft="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_width="@dimen/_340sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:textSize="@dimen/_12ssp"
+                android:text="Service Price:"
+                android:textColor="@color/black"
+                android:background="@drawable/rounded_corner_lightblue"
+                android:fontFamily="@font/montmedium"/>
+
+            <TextView
+                android:id="@+id/serv_serviceDate"
+                android:layout_below="@+id/serv_noUnit"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingTop="@dimen/_12sdp"
+                android:paddingLeft="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_width="@dimen/_340sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:textSize="@dimen/_12ssp"
+                android:text="Payment Method:"
+                android:textColor="@color/black"
+                android:background="@drawable/rounded_corner_lightblue"
+                android:fontFamily="@font/montmedium"/>
+
+            <TextView
+                android:id="@+id/serv_serviceTime"
+                android:layout_below="@+id/serv_serviceDate"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingTop="@dimen/_12sdp"
+                android:paddingLeft="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_width="@dimen/_340sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:textSize="@dimen/_12ssp"
+                android:text="Service Price:"
+                android:textColor="@color/black"
+                android:background="@drawable/rounded_corner_lightblue"
+                android:fontFamily="@font/montmedium"/>
+
+            <TextView
+                android:id="@+id/serv_servicePrice"
+                android:layout_below="@+id/serv_serviceTime"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingTop="@dimen/_12sdp"
+                android:paddingLeft="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_width="@dimen/_340sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:textSize="@dimen/_12ssp"
+                android:text="Payment Method:"
+                android:textColor="@color/black"
+                android:background="@drawable/rounded_corner_lightblue"
+                android:fontFamily="@font/montmedium"/>
+            <TextView
+                android:id="@+id/serv_adminLname"
+                android:layout_below="@+id/serv_servicePrice"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingTop="@dimen/_12sdp"
+                android:paddingLeft="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_width="@dimen/_340sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:textSize="@dimen/_12ssp"
+                android:text="Service Price:"
+                android:textColor="@color/black"
+                android:background="@drawable/rounded_corner_lightblue"
+                android:fontFamily="@font/montmedium"/>
+
+            <TextView
+                android:id="@+id/serv_techLname"
+                android:layout_below="@+id/serv_adminLname"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingTop="@dimen/_12sdp"
+                android:paddingLeft="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_width="@dimen/_340sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:textSize="@dimen/_12ssp"
+                android:text="Payment Method:"
+                android:textColor="@color/black"
+                android:background="@drawable/rounded_corner_lightblue"
+                android:fontFamily="@font/montmedium"/>
+            <TextView
+                android:id="@+id/serv_customerFull"
+                android:layout_below="@+id/serv_techLname"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingTop="@dimen/_12sdp"
+                android:paddingLeft="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_width="@dimen/_340sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:textSize="@dimen/_12ssp"
+                android:text="Service Price:"
+                android:textColor="@color/black"
+                android:background="@drawable/rounded_corner_lightblue"
+                android:fontFamily="@font/montmedium"/>
+
+            <TextView
+                android:id="@+id/serv_fullAddress"
+                android:layout_below="@+id/serv_customerFull"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingTop="@dimen/_12sdp"
+                android:paddingLeft="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_width="@dimen/_340sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:textSize="@dimen/_12ssp"
+                android:text="Payment Method:"
+                android:textColor="@color/black"
+                android:background="@drawable/rounded_corner_lightblue"
+                android:fontFamily="@font/montmedium"/>
+            <TextView
+                android:id="@+id/serv_fullContact"
+                android:layout_below="@+id/serv_fullAddress"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingTop="@dimen/_12sdp"
+                android:paddingLeft="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_width="@dimen/_340sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:textSize="@dimen/_12ssp"
+                android:text="Service Price:"
+                android:textColor="@color/black"
+                android:background="@drawable/rounded_corner_lightblue"
+                android:fontFamily="@font/montmedium"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <Button
+                android:id="@+id/btnBook"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Book Now"
+                android:background="@drawable/rounded_corner_black"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/montmedium"
+                android:textColor="@color/white"
+                android:layout_below="@id/serv_fullContact"/>
+
+
+
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:elevation="10dp"
+                android:visibility="gone"/>
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

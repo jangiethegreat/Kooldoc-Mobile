@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/service_status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    tools:context=".EmployeeHistory.ServiceUpdate">
+
+
+    <TextView
+        android:id="@+id/update_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Service Update"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_28ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.072" />
+
+
+    <Spinner
+        android:id="@+id/spinner_status"
+        android:layout_width="355dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/update_head"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_corner"
+        android:contentDescription="@string/app_name"
+        android:fontFamily="@font/montregular"
+        android:hint="Service Status"
+        android:paddingLeft="@dimen/_20sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/update_head"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <Button
+        android:id="@+id/btn_addImages"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_below="@id/spinner_status"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_corner"
+        android:fontFamily="@font/montmedium"
+        android:text="Add Image"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_status"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <ImageView
+        android:id="@+id/show_img"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_below="@id/btn_addImages"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_addImages"
+        app:layout_constraintVertical_bias="0.078" />
+
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_below="@id/show_img"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_corner_kdcolorlight"
+        android:fontFamily="@font/montmedium"
+        android:text="Submit Report"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/show_img"
+        app:layout_constraintVertical_bias="0.104" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

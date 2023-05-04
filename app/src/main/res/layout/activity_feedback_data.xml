@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CustomerHistory.DetailActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"
+        android:layout_marginBottom="@dimen/_400sdp"
+        android:background="#0077b6"
+        >
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_backwhite"
+            android:layout_marginTop="@dimen/_20sdp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Service"
+            android:fontFamily="@font/montmedium"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Service Details"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserratbold"
+            android:textSize="@dimen/_28ssp"
+            android:layout_marginTop="@dimen/_80sdp"
+            android:layout_marginLeft="@dimen/_20sdp"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_150sdp"
+            android:background="@drawable/border_lightdark2"
+            android:padding="@dimen/_15sdp">
+
+            <TextView
+                android:id="@+id/relative_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transaction History"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserratbold"
+                android:textSize="@dimen/_20ssp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                />
+
+            <TextView
+                android:id="@+id/acID"
+                android:layout_below="@+id/relative_head"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_width="@dimen/_340sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:text="Customer ID: "
+                android:textColor="@color/black"
+                android:background="@drawable/rounded_corner_lightblue"
+                android:fontFamily="@font/montmedium"/>
+
+            <TextView
+                android:id="@+id/bkType"
+                android:layout_below="@+id/acID"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_width="@dimen/_340sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:text="Book type: "
+                android:textColor="@color/black"
+                android:background="@drawable/rounded_corner_lightblue"
+                android:fontFamily="@font/montmedium"/>
+
+            <TextView
+                android:id="@+id/servType"
+                android:layout_below="@+id/bkType"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_width="@dimen/_340sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:text="Service Type: "
+                android:textColor="@color/black"
+                android:background="@drawable/rounded_corner_lightblue"
+                android:fontFamily="@font/montmedium"/>
+
+            <TextView
+                android:id="@+id/acType"
+                android:layout_below="@+id/servType"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_width="@dimen/_340sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:text="Aircon Type:"
+                android:textColor="@color/black"
+                android:background="@drawable/rounded_corner_lightblue"
+                android:fontFamily="@font/montmedium"/>
+
+            <TextView
+                android:id="@+id/acBrand"
+                android:layout_below="@+id/acType"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_width="@dimen/_340sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:text="Aircon Brand:"
+                android:textColor="@color/black"
+                android:background="@drawable/rounded_corner_lightblue"
+                android:fontFamily="@font/montmedium"/>
+
+            <TextView
+                android:id="@+id/acHp"
+                android:layout_below="@+id/acType"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_width="@dimen/_340sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:text="Aircon Horsepower:"
+                android:textColor="@color/black"
+                android:background="@drawable/rounded_corner_lightblue"
+                android:fontFamily="@font/montmedium"/>
+
+
+            <TextView
+                android:id="@+id/utType"
+                android:layout_below="@+id/acHp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_width="@dimen/_340sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:text="Unit Type:"
+                android:textColor="@color/black"
+                android:background="@drawable/rounded_corner_lightblue"
+                android:fontFamily="@font/montmedium"/>
+
+            <TextView
+                android:id="@+id/noUnit"
+                android:layout_below="@+id/utType"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_width="@dimen/_340sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:text="Number of Unit:"
+                android:textColor="@color/black"
+                android:background="@drawable/rounded_corner_lightblue"
+                android:fontFamily="@font/montmedium"/>
+            <TextView
+                android:id="@+id/description"
+                android:layout_below="@+id/noUnit"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+
+                android:layout_width="@dimen/_340sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:text="Description:"
+                android:textColor="@color/black"
+                android:background="@drawable/rounded_corner_lightblue"
+                android:fontFamily="@font/montmedium"/>
+            <TextView
+                android:id="@+id/cooling"
+                android:layout_below="@+id/description"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_width="@dimen/_340sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:text="Cooling Condition:"
+                android:textColor="@color/black"
+                android:background="@drawable/rounded_corner_lightblue"
+                android:fontFamily="@font/montmedium"/>
+            <TextView
+                android:id="@+id/mechanicalNoise"
+                android:layout_below="@+id/cooling"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_width="@dimen/_340sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:text="Mechanical Noise Condition:"
+                android:textColor="@color/black"
+                android:background="@drawable/rounded_corner_lightblue"
+                android:fontFamily="@font/montmedium"/>
+            <TextView
+                android:id="@+id/electricConnectivity"
+                android:layout_below="@+id/mechanicalNoise"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_width="@dimen/_340sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:text="Electric Connectivity Condition:"
+                android:textColor="@color/black"
+                android:background="@drawable/rounded_corner_lightblue"
+                android:fontFamily="@font/montmedium"/>
+
+
+            <TextView
+                android:id="@+id/servDate"
+                android:layout_below="@+id/electricConnectivity"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_width="@dimen/_340sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:text="Service Date:"
+                android:textColor="@color/black"
+                android:background="@drawable/rounded_corner_lightblue"
+                android:fontFamily="@font/montmedium"/>
+
+            <TextView
+                android:id="@+id/servTime"
+                android:layout_below="@+id/servDate"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_width="@dimen/_340sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:text="Service Time:"
+                android:textColor="@color/black"
+                android:background="@drawable/rounded_corner_lightblue"
+                android:fontFamily="@font/montmedium"/>
+
+            <TextView
+                android:id="@+id/servPrice"
+                android:layout_below="@+id/servTime"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_width="@dimen/_340sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:text="Service Price:"
+                android:textColor="@color/black"
+                android:background="@drawable/rounded_corner_lightblue"
+                android:fontFamily="@font/montmedium"/>
+
+            <TextView
+                android:id="@+id/adminLastname"
+                android:layout_below="@+id/servPrice"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_width="@dimen/_340sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:text="Admin Last name:"
+                android:textColor="@color/black"
+                android:background="@drawable/rounded_corner_lightblue"
+                android:fontFamily="@font/montmedium"/>
+
+            <TextView
+                android:id="@+id/techLastname"
+                android:layout_below="@+id/adminLastname"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_width="@dimen/_340sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:text="Techinician Last names:"
+                android:textColor="@color/black"
+                android:background="@drawable/rounded_corner_lightblue"
+                android:fontFamily="@font/montmedium"/>
+
+            <Button
+                android:textColor="@color/white"
+                android:id="@+id/btn_downloadPDF"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/techLastname"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/montmedium"
+                android:layout_height="wrap_content"
+                android:text="Download Receipt"
+                android:background="@drawable/rounded_corner_black"/>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

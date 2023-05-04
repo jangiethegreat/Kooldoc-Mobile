@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    tools:context=".AppLogin.UserRegisterActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_margin="15dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_regHead"
+            android:layout_marginTop="30dp"
+            android:text="Please enter your details to Register on the App"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-light"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            />
+
+
+        <EditText
+            android:id="@+id/edt_firstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_regHead"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:hint="Enter your First Name"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:padding="6dp"
+            android:textSize="16sp" />
+
+
+        <EditText
+            android:id="@+id/edt_lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_firstname"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:hint="Enter your Last Name"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:padding="6dp"
+            android:textSize="16sp" />
+
+
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_lastname"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:hint="Enter your Email Address"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:padding="6dp"
+            android:textSize="16sp" />
+
+
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_email"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:hint="Enter your Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:padding="6dp"
+            android:textSize="16sp" />
+
+
+        <EditText
+            android:id="@+id/edt_confirmPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_password"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:padding="6dp"
+            android:textSize="16sp" />
+
+
+
+
+        <EditText
+            android:id="@+id/edt_phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_confirmPass"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:hint="Enter your Phone Number"
+            android:inputType="phone"
+            android:minHeight="48dp"
+            android:padding="6dp"
+            android:textSize="16sp" />
+
+
+        <EditText
+            android:id="@+id/edt_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_phoneNumber"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:hint="Enter your Address"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:padding="6dp"
+            android:textSize="16sp" />
+
+
+        <EditText
+            android:id="@+id/edt_barangay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_address"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:hint="Enter your Barangay"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:padding="6dp"
+            android:textSize="16sp" />
+
+
+        <EditText
+            android:id="@+id/edt_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_barangay"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:hint="Enter your City"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:padding="6dp"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edt_province"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_city"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:hint="Enter your Province"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:padding="6dp"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edt_zipCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_province"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:hint="Enter your Zip Code"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:padding="6dp"
+            android:textSize="16sp" />
+
+
+
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:layout_below="@id/edt_zipCode"
+            android:layout_marginTop="50dp"
+            android:text="Register"/>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:elevation="10dp"
+            android:visibility="gone"/>
+
+
+    </RelativeLayout>
+</ScrollView>

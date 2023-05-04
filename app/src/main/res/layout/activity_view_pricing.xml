@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cleaning.viewPricingActivity">
+
+
+
+    <RelativeLayout
+        android:id="@+id/first_rlt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="15dp"
+        android:layout_margin="15dp">
+
+
+        <TextView
+            android:id="@+id/txt_cleaningfee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cleaning Fee"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+
+            android:textColor="@color/kdcolor" />
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="330dp"
+            />
+        <RelativeLayout
+            android:id="@+id/second_rlt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@color/white"
+            android:layout_marginTop="50dp">
+            <TextView
+                android:id="@+id/txt_window"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Window Aircon"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/window" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:text="Php 925 /per unit"
+                android:layout_marginLeft="180dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/third_rlt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@color/white"
+            android:layout_marginTop="200dp">
+            <TextView
+                android:id="@+id/txt_split"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Split Type Aircon"
+
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/split"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:text="Php 1,475 /per unit"
+                android:layout_marginLeft="180dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fourth_rlt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@color/white"
+            android:layout_marginTop="380dp">
+            <TextView
+                android:id="@+id/txt_tower"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tower Aircon"
+
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/tower"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:text="Php 2,125 /per unit"
+                android:layout_marginLeft="180dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fifth_rlt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@color/white"
+            android:layout_marginTop="580dp">
+            <TextView
+                android:id="@+id/txt_suspend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Suspended Aircon"
+
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/suspended"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:text="Php 3,125 /per unit"
+                android:layout_marginLeft="180dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sixth_rlt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@color/white"
+            android:layout_marginTop="750dp">
+            <TextView
+                android:id="@+id/txt_cassette"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cassette Aircon"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/cassette"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:text="Php 3,125 /per unit"
+                android:layout_marginLeft="180dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/seventh_rlt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@color/white"
+            android:layout_marginTop="890dp">
+            <TextView
+                android:id="@+id/txt_concealed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Concealed Aircon"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/concealed"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:text="Php 3,125 /per unit"
+                android:layout_marginLeft="180dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/eight_rlt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@color/white"
+            android:layout_marginTop="1050dp">
+            <TextView
+                android:id="@+id/txt_ushaped"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="U-shaped Window Aircon"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/ushaped"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:text="Php 1,475 /per unit"
+                android:layout_marginLeft="180dp"/>
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Cleaning.bookCleaning"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"
+        android:layout_marginBottom="@dimen/_400sdp"
+        android:background="#1B98DD">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:layout_marginTop="@dimen/_30sdp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aircon\nInstallation"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserratbold"
+            android:textSize="@dimen/_28ssp"
+            android:layout_marginTop="@dimen/_130sdp"
+            android:layout_marginLeft="20dp"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_220sdp"
+            android:background="@drawable/border_lightdark2"
+            android:padding="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/txt_serviceType"
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:paddingTop="@dimen/_9sdp"
+                android:textSize="@dimen/_17ssp"
+                android:text="Installation"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserratbold"
+                android:background="@drawable/rounded_corner_lightblue"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:paddingLeft="@dimen/_15sdp"/>
+
+
+
+            <Spinner
+                android:id="@+id/spinner_one"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:paddingRight="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_20sdp"
+                android:textSize="@dimen/_20sdp"
+                android:fontFamily="@font/montserrat"
+                android:layout_below="@+id/txt_serviceType"
+                android:background="@drawable/rounded_corner_lightblue"/>
+            <Spinner
+                android:id="@+id/spinner_two"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:paddingRight="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_20sdp"
+                android:textSize="@dimen/_20sdp"
+                android:fontFamily="@font/montserrat"
+                android:layout_below="@+id/spinner_one"
+                android:background="@drawable/rounded_corner_lightblue"/>
+            <Spinner
+                android:id="@+id/spinner_three"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:paddingRight="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_20sdp"
+                android:textSize="@dimen/_20sdp"
+                android:fontFamily="@font/montserrat"
+                android:layout_below="@+id/spinner_two"
+                android:background="@drawable/rounded_corner_lightblue"/>
+
+            <Spinner
+                android:id="@+id/spinner_four"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:paddingRight="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_20sdp"
+                android:textSize="@dimen/_20sdp"
+                android:fontFamily="@font/montserrat"
+                android:layout_below="@+id/spinner_three"
+                android:background="@drawable/rounded_corner_lightblue"/>
+
+            <EditText
+                android:id="@+id/edt_description"
+                android:layout_below="@+id/spinner_four"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_130sdp"
+                android:paddingLeft="@dimen/_12sdp"
+                android:paddingBottom="@dimen/_100sdp"
+                android:hint="Description"
+                android:textSize="@dimen/_13ssp"
+                android:fontFamily="@font/montmedium"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:background="@drawable/rounded_cancel"/>
+
+            <Button
+                android:id="@+id/btnProceed"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:textColor="@color/white"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:background="@drawable/rounded_corner_black"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_below="@id/edt_description"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:elevation="@dimen/_10sdp"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

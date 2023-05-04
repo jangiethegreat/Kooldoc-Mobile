@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.ServiceFragment"
+    android:background="@color/kdcolor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <TextView
+            android:id="@+id/service_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Services"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_30ssp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_50sdp"/>
+
+        <RelativeLayout
+            android:id="@+id/acInstallation"
+            android:layout_below="@+id/service_head"
+            android:layout_width="@dimen/_400sdp"
+            android:layout_height="@dimen/_130sdp"
+            android:background="@drawable/relative_primary"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_80sdp"
+
+                android:fontFamily="@font/montregular"
+                android:text="Installation"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20ssp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/acCleaning"
+            android:layout_below="@+id/acInstallation"
+            android:layout_width="@dimen/_400sdp"
+            android:layout_height="@dimen/_130sdp"
+            android:background="@drawable/relative_primary"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_20sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_80sdp"
+                android:fontFamily="@font/montregular"
+                android:text="Cleaning"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20ssp"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/acMaintain"
+            android:layout_below="@+id/acCleaning"
+            android:layout_width="@dimen/_400sdp"
+            android:layout_height="@dimen/_130sdp"
+            android:background="@drawable/relative_primary"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_20sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_80sdp"
+                android:fontFamily="@font/montregular"
+                android:text="Maintenance"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20ssp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/acRepair"
+            android:layout_below="@+id/acMaintain"
+            android:layout_width="@dimen/_400sdp"
+            android:layout_height="@dimen/_130sdp"
+            android:background="@drawable/relative_primary"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_110sdp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_80sdp"
+                android:fontFamily="@font/montregular"
+                android:text="Repair"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20ssp"/>
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

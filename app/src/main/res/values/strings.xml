@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">KOOLDOC</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+
+    <string name="heading_one">Welcome to \nkooldoc</string>
+    <string name="heading_two">Convenience</string>
+    <string name="heading_three">Expert technicians</string>
+    <string name="heading_fourth">Time-saving</string>
+    <string name="heading_five">Transparent pricing</string>
+
+
+    <string name="desc_one">We connect you with expert technicians to make your air conditioning service experience hassle-free. Enjoy a cool and comfortable home without the worry.</string>
+    <string name="desc_two">With your busy schedule, you can easily book an appointment for their air conditioning service without having to make phone calls or visit the service center in person.</string>
+    <string name="desc_three">Kooldoc service app connects users with experienced and qualified technicians who can diagnose and repair any issues with their air conditioning unit. This ensures that users receive high-quality service for their air conditioning system.</string>
+    <string name="desc_fourth">You can save time by avoiding long wait times at the service center. They can book an appointment at a time that is convenient for them, without having to spend time waiting in line.</string>
+    <string name="desc_five">You can view the pricing of different services upfront. This allows users to make an informed decision and avoid any hidden fees.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="spinner_options">
+
+        <item> Item 1</item>
+        <item> Item 2</item>
+        <item> Item 3</item>
+
+    </string-array>
+
+    <string-array name="payment_options">
+
+        <item>  G-cash</item>
+        <item> Cash after service</item>
+
+
+    </string-array>
+
+</resources>
